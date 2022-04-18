@@ -5,6 +5,7 @@
 }
 
 /*--Variables--*/
+/*--Mixins--*/
 /*-- Polices--*/
 /*--Normalize--*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -392,11 +393,57 @@ header .header__logo img {
   border-radius: 30px;
 }
 .main__content .main__button--violet {
-  background: rgb(147, 86, 220);
-  background: linear-gradient(356deg, rgb(147, 86, 220) 29%, rgb(255, 121, 218) 87%);
+  background: #9356DC;
+  background: linear-gradient(356deg, #9356DC 29%, rgb(255, 121, 218) 87%);
 }
 .main__content .main__button--police {
   text-decoration: none;
+  color: #fff;
+}
+
+.fonction {
+  padding: 20px 20px 60px;
+}
+.fonction__description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fonction__onglets {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  position: relative;
+}
+.fonction__onglets__description {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 30px;
+}
+.fonction__onglets--bggreylight {
+  background: rgb(244, 244, 244);
+}
+.fonction__onglets--bgviolet {
+  background: rgb(241, 228, 248);
+}
+.fonction__onglets--shadow {
+  box-shadow: 0px 2px 6px rgb(181, 181, 181);
+}
+.fonction__onglets .fa-solid {
+  color: #9356DC;
+}
+
+.number {
+  position: absolute;
+  left: -10px;
+  padding: 4px 9px;
+  border-radius: 100px;
+}
+.number--violet {
+  background-color: #9356DC;
   color: #fff;
 }
 

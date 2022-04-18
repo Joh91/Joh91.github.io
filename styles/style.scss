@@ -3,7 +3,17 @@
      box-sizing: border-box;
  }
 /*--Variables--*/ 
-$color-background: rgb(244, 244, 244); 
+$color-background-grey: rgb(244, 244, 244); 
+$color-background-violet: rgb(241, 228, 248);
+$color-icones: #9356DC; 
+$color-shadow: rgb(181, 181, 181); 
+
+/*--Mixins--*/ 
+@mixin fonction__onglets {
+    display: flex; 
+    align-items: center;
+    gap: 10px;   
+}
 
  /*-- Polices--*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
@@ -50,7 +60,7 @@ margin: 30px auto 20px;
     text-align: center; 
 
     &--bggreylight {
-        background-color: $color-background;
+        background-color: $color-background-grey;
     }
 
 
@@ -65,8 +75,8 @@ margin: 30px auto 20px;
         border-radius: 30px;
 
         &--violet {
-            background: rgb(147,86,220);
-            background: linear-gradient(356deg, rgba(147,86,220,1) 29%, rgba(255,121,218,1) 87%);
+            background: $color-icones;
+            background: linear-gradient(356deg, $color-icones 29%, rgba(255,121,218,1) 87%);
         } 
 
         &--police {
@@ -75,6 +85,61 @@ margin: 30px auto 20px;
         }
     }
 }
+
+.fonction {
+    padding: 20px 20px 60px;
+    
+    &__description {
+        display: flex; 
+        flex-direction: column; 
+        gap: 20px; 
+    }
+}
+
+
+.fonction__onglets {
+    @include fonction__onglets;
+    border-radius: 15px;
+    position: relative; 
+    
+    &__description {
+        @include fonction__onglets; 
+        padding-left: 30px;   
+        }
+
+        &--bggreylight {
+            background: $color-background-grey;
+        }
+
+        &--bgviolet {
+            background: $color-background-violet;
+        }
+
+        &--shadow {
+            box-shadow: 0px 2px 6px $color-shadow; 
+        }
+
+        .fa-solid {
+            color: $color-icones;
+        }
+}
+
+.number {
+    position: absolute; 
+    left: -10px; 
+    padding: 4px 9px; 
+    border-radius: 100px;
+
+    &--violet {
+        background-color: $color-icones;
+        color: #fff; 
+    }
+}
+
+
+  
+
+
 
 
 
