@@ -1,0 +1,88 @@
+ *
+ {
+     box-sizing: border-box;
+ }
+/*--Variables--*/ 
+$color-background: rgb(244, 244, 244); 
+
+ /*-- Polices--*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/*--Normalize--*/ 
+@import "./base/normalize"; 
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+margin: 30px auto 20px;  
+
+    .header__logo {
+        text-align: center; 
+
+        & img {
+            width: 50%; 
+        }
+    }
+}
+
+.main__location {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 10px; 
+
+    &--bggrey {
+        background: rgba(233, 232, 232, 0.866);
+    }
+
+    .main__city--police {
+        font-style: normal;
+        font-size: 14px;
+        font-weight: bold; 
+    }
+}
+
+.main__content {
+    padding: 20px 20px 60px; 
+    text-align: center; 
+
+    &--bggreylight {
+        background-color: $color-background;
+    }
+
+
+    .main__title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .main__button {
+        display: inline-block; 
+        padding: 15px; 
+        border-radius: 30px;
+
+        &--violet {
+            background: rgb(147,86,220);
+            background: linear-gradient(356deg, rgba(147,86,220,1) 29%, rgba(255,121,218,1) 87%);
+        } 
+
+        &--police {
+            text-decoration: none;
+            color: #fff; 
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
