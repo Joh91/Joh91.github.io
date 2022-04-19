@@ -10,6 +10,7 @@ $color-secondary: #FF79DA;
 $color-tertiaire: #99E2D0; 
 $darken-mint: darken($color-tertiaire, 60%); 
 $color-shadow: rgb(181, 181, 181); 
+$lighten-header: lighten(#000000, 45%); 
 
 /*--Mixins--*/ 
 @mixin fonction__onglets {
@@ -23,6 +24,10 @@ $color-shadow: rgb(181, 181, 181);
     flex-direction: column; 
     border-radius: 30px;
     width: 100%;
+}
+
+@mixin shadow__cards {
+    box-shadow: 0px 2px 6px $color-shadow; 
 }
 
 @mixin card__link--fix {
@@ -146,7 +151,7 @@ margin: 30px auto 20px;
         }
 
         &--shadow {
-            box-shadow: 0px 2px 6px $color-shadow; 
+            @include shadow__cards; 
         }
 
         .fa-solid {
@@ -184,19 +189,23 @@ margin: 30px auto 20px;
 }
 
 .services__card {
-    @include services__card--structure; 
-
-    &--bgwhite {
-        background-color: #fff;
-    }
+    @include services__card--structure;
+    @include shadow__cards;  
 
     a {
-        @include card__link--fix;  
+        @include card__link--fix;
+        transform: scale(1);
+        transition: transform (0.25s);
+        
+        &:hover {
+            transform: scale(1.05); 
+        }
     }
 }
 
 .services__card__img {
     position: relative;
+    height: 180px; 
     .bandeau {
         @include bandeau--struture; 
 
@@ -207,8 +216,9 @@ margin: 30px auto 20px;
     } 
     img {
         width: 100%; 
-        height: 225px; 
-        object-fit: cover; 
+        height: 100%; 
+        object-fit: cover;
+        border-radius: 30px 30px 0 0;  
         }
 }
 
@@ -217,13 +227,33 @@ margin: 30px auto 20px;
     display: flex; 
     align-items: baseline; 
     justify-content: space-between;
+    background: #fff;
+    border-radius: 0 0 30px 30px; 
 
+    &__titles {
+        padding: 20px 0 0; 
+        gap: 20px; 
+    }
+
+    h3 {
+        margin: 0; 
+    }
+
+    h4 {
+        margin: 10px 0 15px; 
+        font-size: 14px; 
+        color: $lighten-header; 
+    }
+
+    
     .button__fav {
         border: none; 
         background: none;
 
-        i:hover {
+        &:active {
             background-color: $color-primaire; 
+            padding: 0; 
+            cursor: pointer; 
         }
     }
 }
