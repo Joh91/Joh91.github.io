@@ -360,6 +360,15 @@ header .header__logo {
 header .header__logo img {
   width: 50%;
 }
+header .header__logo--elements-position {
+  position: relative;
+}
+header .header__logo--elements-position i {
+  position: absolute;
+  left: 30px;
+  top: 5px;
+  font-size: 24px;
+}
 
 /*--section1--*/
 .main__location {
@@ -553,6 +562,19 @@ footer li {
 footer a {
   text-decoration: none;
   color: rgb(236, 234, 234);
+}
+
+.services {
+  padding: 0;
+  position: relative;
+}
+.services__background {
+  height: 300px;
+  width: 100%;
+}
+.services img {
+  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

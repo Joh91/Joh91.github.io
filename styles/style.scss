@@ -71,6 +71,17 @@ margin: 30px auto 20px;
             width: 50%; 
         }
     }
+
+    .header__logo--elements-position {
+        position: relative; 
+        
+        i {
+            position: absolute; 
+            left: 30px; 
+            top: 5px; 
+            font-size: 24px; 
+        }
+    }
 }
 
 /*--section1--*/
@@ -289,6 +300,25 @@ footer {
 
 
 }
+
+.services {
+    padding: 0; 
+    position: relative; 
+    
+    &__background {
+    height: 300px; 
+    width: 100%; 
+    }
+    
+    img {
+        height: 100%; 
+        width: 100%; 
+    }
+}
+
+
+
+
 
 
 
