@@ -436,13 +436,13 @@ header .header__logo img {
   color: #9356DC;
 }
 
-.number {
+.fonction__onglets__number {
   position: absolute;
   left: -10px;
   padding: 4px 9px;
   border-radius: 100px;
 }
-.number--violet {
+.fonction__onglets__number--violet {
   background-color: #9356DC;
   color: #fff;
 }
