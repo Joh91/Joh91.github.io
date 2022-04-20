@@ -324,7 +324,7 @@ footer {
 
 
 
-.services {
+.menu {
     padding: 0; 
     position: relative; 
     
@@ -339,7 +339,7 @@ footer {
     }
 }
 
-.services__menu {
+.menu__block {
     @include menu__section--structure; 
  
 
@@ -365,7 +365,7 @@ footer {
      }
 }
 
-.services__menu__title {
+.menu__title {
     font-weight: inherit;
     font-size: 18px;
     color: $lighten-header;

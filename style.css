@@ -568,20 +568,20 @@ footer a {
   color: rgb(236, 234, 234);
 }
 
-.services {
+.menu {
   padding: 0;
   position: relative;
 }
-.services__background {
+.menu__background {
   height: 300px;
   width: 100%;
 }
-.services img {
+.menu img {
   height: 100%;
   width: 100%;
 }
 
-.services__menu {
+.menu__block {
   padding: 20px;
   margin-bottom: 20px;
   position: absolute;
@@ -590,30 +590,30 @@ footer a {
   top: 190px;
   width: 100%;
 }
-.services__menu--bggreylight {
+.menu__block--bggreylight {
   background-color: rgb(244, 244, 244);
 }
-.services__menu__maintitle {
+.menu__block__maintitle {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.services__menu .maintitle__icon {
+.menu__block .maintitle__icon {
   position: absolute;
   right: 10px;
 }
-.services__menu h1 {
+.menu__block h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 26px;
 }
 
-.services__menu__title {
+.menu__title {
   font-weight: inherit;
   font-size: 18px;
   color: #737373;
 }
-.services__menu__title::after {
+.menu__title::after {
   content: "";
   display: block;
   width: 45px;
