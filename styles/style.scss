@@ -60,6 +60,14 @@ $color-footer-font: rgb(236, 234, 234);
     width: 100%;
 }
 
+@mixin menu__cards--description {
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
 
  /*-- Polices--*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
@@ -246,6 +254,16 @@ margin: 30px auto 20px;
         }
 }
 
+h3 {
+    margin: 0; 
+}
+
+h4 {
+    margin: 10px 0 15px; 
+    font-size: 14px; 
+    color: $lighten-header; 
+}
+
 .services__card__description {
     padding: 0 20px; 
     display: flex; 
@@ -259,17 +277,6 @@ margin: 30px auto 20px;
         gap: 20px; 
     }
 
-    h3 {
-        margin: 0; 
-    }
-
-    h4 {
-        margin: 10px 0 15px; 
-        font-size: 14px; 
-        color: $lighten-header; 
-    }
-
-    
     .button__fav {
         border: none; 
         background: none;
@@ -357,6 +364,37 @@ footer {
          font-size: 26px; 
      }
 }
+
+.services__menu__title {
+    font-weight: inherit;
+    font-size: 18px;
+    color: $lighten-header;
+
+    &::after {
+        content: "";
+        display: block; 
+        width: 45px; 
+        height: 3px; 
+        margin-top: 5px; 
+        background-color: $color-tertiaire; 
+    }
+}
+
+.cards__description {
+    @include menu__cards--description; 
+    position: relative; 
+
+    &--bgwhite {
+        background-color: #fff;
+    }
+    
+    &__price {
+        font-weight: bold;
+        
+    }
+}
+
+
 
 
 

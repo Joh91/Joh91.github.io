@@ -511,6 +511,16 @@ header .header__logo--elements-position i {
   border-radius: 30px 30px 0 0;
 }
 
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 10px 0 15px;
+  font-size: 14px;
+  color: #737373;
+}
+
 .services__card__description {
   padding: 0 20px;
   display: flex;
@@ -522,14 +532,6 @@ header .header__logo--elements-position i {
 .services__card__description__titles {
   padding: 20px 0 0;
   gap: 20px;
-}
-.services__card__description h3 {
-  margin: 0;
-}
-.services__card__description h4 {
-  margin: 10px 0 15px;
-  font-size: 14px;
-  color: #737373;
 }
 .services__card__description .button__fav {
   border: none;
@@ -604,6 +606,35 @@ footer a {
 .services__menu h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 26px;
+}
+
+.services__menu__title {
+  font-weight: inherit;
+  font-size: 18px;
+  color: #737373;
+}
+.services__menu__title::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: #99E2D0;
+}
+
+.cards__description {
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.cards__description--bgwhite {
+  background-color: #fff;
+}
+.cards__description__price {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
