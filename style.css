@@ -369,6 +369,9 @@ header .header__logo--elements-position i {
   top: 5px;
   font-size: 24px;
 }
+header .fa-solid--dark {
+  color: #000000;
+}
 
 /*--section1--*/
 .main__location {
