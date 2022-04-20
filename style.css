@@ -543,6 +543,8 @@ header .header__logo--elements-position i {
 
 footer {
   padding: 20px 20px;
+  position: relative;
+  bottom: -2000px;
   background-color: #3b3a3a;
   color: rgb(236, 234, 234);
 }
@@ -575,6 +577,33 @@ footer a {
 .services img {
   height: 100%;
   width: 100%;
+}
+
+.services__menu {
+  padding: 20px;
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 40px 40px 0 0;
+  top: 190px;
+  width: 100%;
+}
+.services__menu--bggreylight {
+  background-color: rgb(244, 244, 244);
+}
+.services__menu__maintitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services__menu .maintitle__icon {
+  position: absolute;
+  right: 10px;
+}
+.services__menu h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 26px;
 }
 
 /*# sourceMappingURL=style.css.map */

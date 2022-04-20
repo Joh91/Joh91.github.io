@@ -47,8 +47,19 @@ $color-footer-font: rgb(236, 234, 234);
     position: absolute; 
     top: 20px; 
     right: 15px;
-    padding: 5px;
+    padding: 5px; 
 }
+
+@mixin menu__section--structure {
+    padding: 20px; 
+    margin-bottom: 20px; 
+    position: absolute; 
+    z-index: 1;
+    border-radius: 40px 40px 0 0;
+    top: 190px; 
+    width: 100%;
+}
+
 
  /*-- Polices--*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
@@ -273,6 +284,8 @@ margin: 30px auto 20px;
 
 footer {
     padding: 20px 20px; 
+    position: relative;
+    bottom: -2000px; 
     background-color: $color-footer;
     color: $color-footer-font; 
 
@@ -301,6 +314,9 @@ footer {
 
 }
 
+
+
+
 .services {
     padding: 0; 
     position: relative; 
@@ -314,6 +330,32 @@ footer {
         height: 100%; 
         width: 100%; 
     }
+}
+
+.services__menu {
+    @include menu__section--structure; 
+ 
+
+     &--bggreylight {
+         background-color: $color-background-grey;
+     }
+
+     &__maintitle {
+         position: relative; 
+         display: flex; 
+         align-items: center; 
+         justify-content: space-between;
+     }
+
+     .maintitle__icon {
+         position: absolute; 
+         right: 10px;
+     }
+
+     h1 {
+         font-family: 'Shrikhand', sans-serif;
+         font-size: 26px; 
+     }
 }
 
 
