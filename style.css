@@ -427,6 +427,7 @@ header .fa-solid--dark {
 .fonction__onglets {
   display: flex;
   align-items: center;
+  padding: 10px;
   gap: 10px;
   border-radius: 15px;
   position: relative;
@@ -434,6 +435,7 @@ header .fa-solid--dark {
 .fonction__onglets__description {
   display: flex;
   align-items: center;
+  padding: 10px;
   gap: 10px;
   padding-left: 30px;
 }
@@ -548,8 +550,6 @@ h4 {
 
 footer {
   padding: 20px 20px;
-  position: relative;
-  bottom: -2000px;
   background-color: #3b3a3a;
   color: rgb(236, 234, 234);
 }
@@ -569,6 +569,11 @@ footer li {
 footer a {
   text-decoration: none;
   color: rgb(236, 234, 234);
+}
+
+.menu__footer {
+  position: relative;
+  bottom: -1250px;
 }
 
 .menu {

@@ -17,7 +17,8 @@ $color-footer-font: rgb(236, 234, 234);
 /*--Mixins--*/ 
 @mixin fonction__onglets {
     display: flex; 
-    align-items: center; 
+    align-items: center;
+    padding: 10px; 
     gap: 10px; 
 }
 
@@ -170,6 +171,7 @@ margin: 30px auto 20px;
 
 
 .fonction__onglets {
+    
     @include fonction__onglets;
     border-radius: 15px;
     position: relative; 
@@ -194,6 +196,7 @@ margin: 30px auto 20px;
         .fa-solid {
             color: $color-primaire;
         }
+
 }
 
 .fonction__onglets__number {
@@ -295,9 +298,7 @@ h4 {
 }
 
 footer {
-    padding: 20px 20px; 
-    position: relative;
-    bottom: -2000px; 
+    padding: 20px 20px;  
     background-color: $color-footer;
     color: $color-footer-font; 
 
@@ -324,6 +325,11 @@ footer {
     }
 
 
+}
+
+.menu__footer {
+    position: relative;
+    bottom: -1250px;
 }
 
 
