@@ -584,10 +584,12 @@ footer a {
 .menu__background {
   height: 300px;
   width: 100%;
+  position: relative;
 }
 .menu img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .menu__block {
