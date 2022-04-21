@@ -521,13 +521,14 @@ h3 {
 }
 
 h4 {
-  margin: 10px 0 15px;
+  margin: 0;
+  padding: 5px 0 0;
   font-size: 14px;
   color: #737373;
 }
 
 .services__card__description {
-  padding: 0 20px;
+  padding: 0 20px 15px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -643,6 +644,8 @@ footer a {
 }
 .cards__description__price {
   font-weight: bold;
+  align-self: flex-end;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

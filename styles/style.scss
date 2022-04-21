@@ -267,13 +267,14 @@ h3 {
 }
 
 h4 {
-    margin: 10px 0 15px; 
+    margin: 0; 
+    padding: 5px 0 0; 
     font-size: 14px; 
     color: $lighten-header; 
 }
 
 .services__card__description {
-    padding: 0 20px; 
+    padding: 0 20px 15px; 
     display: flex; 
     align-items: baseline; 
     justify-content: space-between;
@@ -331,8 +332,6 @@ footer {
     position: relative;
     bottom: -1250px;
 }
-
-
 
 
 .menu {
@@ -401,7 +400,8 @@ footer {
     
     &__price {
         font-weight: bold;
-        
+        align-self: flex-end;
+        font-size: 14px;  
     }
 }
 
