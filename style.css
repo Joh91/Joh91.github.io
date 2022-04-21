@@ -649,6 +649,9 @@ footer a {
   align-self: flex-end;
   font-size: 14px;
 }
+.cards__description--shadow {
+  box-shadow: 0px 2px 6px rgb(181, 181, 181);
+}
 
 .cards__description__icon {
   display: none;
