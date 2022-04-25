@@ -179,28 +179,28 @@ margin: 30px auto 20px;
     border-radius: 15px;
     position: relative; 
     
-    &__description {
-        @include fonction__onglets; 
-        padding-left: 30px;   
-        }
-
         &--bggreylight {
             background: $color-background-grey;
         }
 
-        &--bgviolet {
-            background: $color-background-violet;
-        }
-
         &--shadow {
             @include shadow__cards; 
+
+        }
+
+        &--bgviolet:hover {
+            background: $color-background-violet;
         }
 
         .fa-solid {
             color: $color-primaire;
         }
-
 }
+
+.fonction__onglets__description {
+    @include fonction__onglets; 
+    padding-left: 30px;   
+    }
 
 .fonction__onglets__number {
     position: absolute; 

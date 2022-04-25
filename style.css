@@ -432,24 +432,25 @@ header .fa-solid--dark {
   border-radius: 15px;
   position: relative;
 }
+.fonction__onglets--bggreylight {
+  background: rgb(244, 244, 244);
+}
+.fonction__onglets--shadow {
+  box-shadow: 0px 2px 6px rgb(181, 181, 181);
+}
+.fonction__onglets--bgviolet:hover {
+  background: rgb(241, 228, 248);
+}
+.fonction__onglets .fa-solid {
+  color: #9356DC;
+}
+
 .fonction__onglets__description {
   display: flex;
   align-items: center;
   padding: 10px;
   gap: 10px;
   padding-left: 30px;
-}
-.fonction__onglets--bggreylight {
-  background: rgb(244, 244, 244);
-}
-.fonction__onglets--bgviolet {
-  background: rgb(241, 228, 248);
-}
-.fonction__onglets--shadow {
-  box-shadow: 0px 2px 6px rgb(181, 181, 181);
-}
-.fonction__onglets .fa-solid {
-  color: #9356DC;
 }
 
 .fonction__onglets__number {
