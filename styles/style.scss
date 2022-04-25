@@ -233,16 +233,16 @@ margin: 30px auto 20px;
 
 .services__card {
     @include services__card--structure;
-    @include shadow__cards;  
+    @include shadow__cards;
+    transform: scale(1);
+    transition: transform (0.25s);
+    
+    &:hover {
+        transform: scale(1.05); 
+    }
 
     a {
         @include card__link--fix;
-        transform: scale(1);
-        transition: transform (0.25s);
-        
-        &:hover {
-            transform: scale(1.05); 
-        }
     }
 }
 
@@ -288,16 +288,19 @@ h4 {
         padding: 20px 0 0; 
         gap: 20px; 
     }
+}
 
-    .button__fav {
-        border: none; 
-        background: none;
+.button__fav {
+    border: none; 
+    background: none;
 
-        &:active {
-            background-color: $color-primaire; 
-            padding: 0; 
-            cursor: pointer; 
-        }
+    .fa-heart:active {
+        font-weight: 900; 
+        background: linear-gradient(356deg, $color-primaire 29%, rgba(255,121,218,1) 87%); 
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        color: transparent;  
+        cursor: pointer; 
     }
 }
 
