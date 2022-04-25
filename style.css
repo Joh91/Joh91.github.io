@@ -572,19 +572,14 @@ footer a {
   color: rgb(236, 234, 234);
 }
 
-.menu__footer {
-  position: relative;
-  bottom: -1225px;
-}
-
 .menu {
   padding: 0;
-  position: relative;
 }
 .menu__background {
   height: 300px;
   width: 100%;
   position: relative;
+  z-index: 0;
 }
 .menu img {
   height: 100%;
@@ -594,11 +589,10 @@ footer a {
 
 .menu__block {
   padding: 20px 20px 75px;
-  margin-bottom: 20px;
-  position: absolute;
+  margin-top: -60px;
+  position: relative;
   z-index: 1;
   border-radius: 40px 40px 0 0;
-  top: 190px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -653,6 +647,17 @@ footer a {
 }
 .cards__description--shadow {
   box-shadow: 0px 2px 6px rgb(181, 181, 181);
+}
+
+.cards__description--animation:active {
+  width: 80%;
+}
+.cards__description--animation:active ::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 50px;
+  background: #99E2D0;
 }
 
 .cards__description__icon {
