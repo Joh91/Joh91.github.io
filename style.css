@@ -519,12 +519,14 @@ header .fa-solid--dark {
 
 h3 {
   margin: 0;
+  font-size: 16px;
 }
 
 h4 {
   margin: 0;
   padding: 5px 0 0;
   font-size: 14px;
+  font-weight: inherit;
   color: #737373;
 }
 
@@ -635,34 +637,38 @@ footer a {
 }
 
 .cards__description {
-  padding: 15px;
   margin-bottom: 30px;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 .cards__description--bgwhite {
   background-color: #fff;
 }
+.cards__description__title {
+  padding: 15px;
+  width: 80%;
+}
 .cards__description__price {
+  text-align: center;
+  padding-bottom: 15px;
   font-weight: bold;
   align-self: flex-end;
   font-size: 14px;
+  width: 20%;
 }
 .cards__description--shadow {
   box-shadow: 0px 2px 6px rgb(181, 181, 181);
 }
-
-.cards__description--animation:active {
-  width: 80%;
-}
-.cards__description--animation:active ::after {
-  content: "";
-  display: block;
+.cards__description:active .cards__description__icon {
+  display: flex;
+  transition: width 4s;
   width: 20%;
-  height: 50px;
-  background: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  background-color: #99E2D0;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 .cards__description__icon {

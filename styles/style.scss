@@ -61,7 +61,6 @@ $color-footer-font: rgb(236, 234, 234);
 }
 
 @mixin menu__cards--description {
-    padding: 15px;
     margin-bottom: 30px;
     border-radius: 20px; 
     display: flex; 
@@ -267,12 +266,14 @@ margin: 30px auto 20px;
 
 h3 {
     margin: 0; 
+    font-size: 16px;
 }
 
 h4 {
     margin: 0; 
     padding: 5px 0 0; 
     font-size: 14px; 
+    font-weight: inherit;
     color: $lighten-header; 
 }
 
@@ -396,41 +397,45 @@ footer {
 }
 
 .cards__description {
-    @include menu__cards--description; 
-    position: relative; 
+    @include menu__cards--description;
 
     &--bgwhite {
         background-color: #fff;
     }
+
+    &__title {
+        padding: 15px;
+        width: 80%; 
+    }
     
     &__price {
+        text-align: center;
+        padding-bottom: 15px;
         font-weight: bold;
         align-self: flex-end;
-        font-size: 14px;  
+        font-size: 14px; 
+        width: 20%;  
     }
 
     &--shadow {
         @include shadow__cards; 
     }
 
-
-}
-
-.cards__description--animation:active {
-    width: 80%;
-
-    ::after {
-        content:"";
-        display: block; 
+    &:active .cards__description__icon{
+        display: flex; 
+        transition: width (4s); 
         width: 20%; 
-        height: 50px; 
-        background: $color-tertiaire; 
+        border-radius: 0 20px 20px 0;
+        background-color: $color-tertiaire;
+        justify-content: center;
+        align-items: center; 
+        color: #fff; 
+        
     }
 }
 
-
 .cards__description__icon {
-    display: none; 
+    display: none;
 }
 
 form {
