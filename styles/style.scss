@@ -312,6 +312,7 @@ footer {
 
     .footer__title {
         font-family: 'Shrikhand', sans-serif;
+        font-weight: inherit; 
     }
 
     ul {
@@ -421,9 +422,8 @@ footer {
         @include shadow__cards; 
     }
 
-    &:active .cards__description__icon{
+    &:hover .cards__description__icon{
         display: flex; 
-        transition: width (4s); 
         width: 20%; 
         border-radius: 0 20px 20px 0;
         background-color: $color-tertiaire;
@@ -436,7 +436,9 @@ footer {
 
 .cards__description__icon {
     display: none;
+    transition: 0.2s; 
 }
+
 
 form {
     align-self: center; 

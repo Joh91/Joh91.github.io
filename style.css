@@ -563,6 +563,7 @@ footer {
 }
 footer .footer__title {
   font-family: "Shrikhand", sans-serif;
+  font-weight: inherit;
 }
 footer ul {
   list-style-type: none;
@@ -660,9 +661,8 @@ footer a {
 .cards__description--shadow {
   box-shadow: 0px 2px 6px rgb(181, 181, 181);
 }
-.cards__description:active .cards__description__icon {
+.cards__description:hover .cards__description__icon {
   display: flex;
-  transition: width 4s;
   width: 20%;
   border-radius: 0 20px 20px 0;
   background-color: #99E2D0;
@@ -673,6 +673,7 @@ footer a {
 
 .cards__description__icon {
   display: none;
+  transition: 0.2s;
 }
 
 form {
