@@ -83,6 +83,15 @@ $color-footer-font: rgb(236, 234, 234);
     }
 }
 
+@mixin icon--animation {
+    font-weight: 900; 
+    background: linear-gradient(356deg, $color-primaire 29%, rgba(255,121,218,1) 87%); 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;  
+    cursor: pointer;
+}
+
 
  /*-- Polices--*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
@@ -291,19 +300,10 @@ h4 {
     }
 }
 
-.button__fav {
-    border: none; 
-    background: none;
-
-    .fa-heart:active {
-        font-weight: 900; 
-        background: linear-gradient(356deg, $color-primaire 29%, rgba(255,121,218,1) 87%); 
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        color: transparent;  
-        cursor: pointer; 
-    }
+.fa-heart:active {
+    @include icon--animation; 
 }
+
 
 footer {
     padding: 20px 20px;  

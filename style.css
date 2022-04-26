@@ -543,11 +543,7 @@ h4 {
   gap: 20px;
 }
 
-.button__fav {
-  border: none;
-  background: none;
-}
-.button__fav .fa-heart:active {
+.fa-heart:active {
   font-weight: 900;
   background: linear-gradient(356deg, #9356DC 29%, rgb(255, 121, 218) 87%);
   -webkit-background-clip: text;
