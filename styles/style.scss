@@ -300,6 +300,12 @@ h4 {
     }
 }
 
+
+.button__fav {
+    background: none;
+    border: none; 
+}
+
 .fa-heart:active {
     @include icon--animation; 
 }
@@ -399,6 +405,8 @@ footer {
 
 .cards__description {
     @include menu__cards--description;
+    overflow: hidden;
+  
 
     &--bgwhite {
         background-color: #fff;
@@ -423,20 +431,30 @@ footer {
     }
 
     &:hover .cards__description__icon{
-        display: flex; 
-        width: 20%; 
-        border-radius: 0 20px 20px 0;
-        background-color: $color-tertiaire;
-        justify-content: center;
-        align-items: center; 
-        color: #fff; 
-        
+        margin-right: 0;
+    }
+
+    &:hover .fa-circle-check {
+        transform: rotate(1turn);
     }
 }
 
+.fa-circle-check {
+    transition: transform 1.75s ease; 
+}
+
+
 .cards__description__icon {
-    display: none;
-    transition: 0.2s; 
+    margin-right: -70px; 
+    display: flex; 
+    width: 20%; 
+    background-color: $color-tertiaire;
+    border-radius: 0 20px 20px 0;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+    transition: margin-right 1.5s ease; 
+
 }
 
 

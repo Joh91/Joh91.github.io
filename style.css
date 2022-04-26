@@ -543,6 +543,11 @@ h4 {
   gap: 20px;
 }
 
+.button__fav {
+  background: none;
+  border: none;
+}
+
 .fa-heart:active {
   font-weight: 900;
   background: linear-gradient(356deg, #9356DC 29%, rgb(255, 121, 218) 87%);
@@ -638,6 +643,7 @@ footer a {
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .cards__description--bgwhite {
   background-color: #fff;
@@ -658,18 +664,26 @@ footer a {
   box-shadow: 0px 2px 6px rgb(181, 181, 181);
 }
 .cards__description:hover .cards__description__icon {
-  display: flex;
-  width: 20%;
-  border-radius: 0 20px 20px 0;
-  background-color: #99E2D0;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+  margin-right: 0;
+}
+.cards__description:hover .fa-circle-check {
+  transform: rotate(1turn);
+}
+
+.fa-circle-check {
+  transition: transform 1.75s ease;
 }
 
 .cards__description__icon {
-  display: none;
-  transition: 0.2s;
+  margin-right: -70px;
+  display: flex;
+  width: 20%;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: margin-right 1.5s ease;
 }
 
 form {
