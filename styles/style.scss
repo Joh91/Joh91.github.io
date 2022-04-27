@@ -342,6 +342,7 @@ footer {
 
 }
 
+/*--page 2/3/4/5--*/ 
 .menu {
     padding: 0; 
  
@@ -359,7 +360,7 @@ footer {
     }
 }
 
-.menu__block {
+.menu__section {
     @include menu__section--structure;
     display: flex; 
     flex-direction: column;
@@ -388,7 +389,7 @@ footer {
      }
 }
 
-.menu__title {
+.menu__titles {
     font-weight: inherit;
     font-size: 18px;
     color: $lighten-header;
@@ -405,12 +406,6 @@ footer {
 
 .cards__description {
     @include menu__cards--description;
-    overflow: hidden;
-  
-
-    &--bgwhite {
-        background-color: #fff;
-    }
 
     &__title {
         padding: 15px;
@@ -425,10 +420,21 @@ footer {
         font-size: 14px; 
         width: 20%;  
     }
+}
+
+.cards__design {
+    &--bgwhite {
+        background-color: #fff;
+    }
 
     &--shadow {
         @include shadow__cards; 
     }
+}
+
+
+.cards__animation {
+    overflow: hidden;
 
     &:hover .cards__description__icon{
         margin-right: 0;
@@ -437,25 +443,26 @@ footer {
     &:hover .fa-circle-check {
         transform: rotate(1turn);
     }
+
+    .cards__description__icon {
+        margin-right: -70px; 
+        display: flex; 
+        width: 20%; 
+        background-color: $color-tertiaire;
+        border-radius: 0 20px 20px 0;
+        justify-content: center;
+        align-items: center; 
+        color: #fff;
+        transition: margin-right 1.5s ease; 
+    
+    }
+
+    .fa-circle-check {
+        transition: transform 1.75s ease; 
+    }
 }
 
-.fa-circle-check {
-    transition: transform 1.75s ease; 
-}
 
-
-.cards__description__icon {
-    margin-right: -70px; 
-    display: flex; 
-    width: 20%; 
-    background-color: $color-tertiaire;
-    border-radius: 0 20px 20px 0;
-    justify-content: center;
-    align-items: center; 
-    color: #fff;
-    transition: margin-right 1.5s ease; 
-
-}
 
 
 form {

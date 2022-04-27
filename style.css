@@ -581,6 +581,7 @@ footer a {
   color: rgb(236, 234, 234);
 }
 
+/*--page 2/3/4/5--*/
 .menu {
   padding: 0;
 }
@@ -596,7 +597,7 @@ footer a {
   object-fit: cover;
 }
 
-.menu__block {
+.menu__section {
   padding: 20px 20px 75px;
   margin-top: -60px;
   position: relative;
@@ -606,30 +607,30 @@ footer a {
   display: flex;
   flex-direction: column;
 }
-.menu__block--bggreylight {
+.menu__section--bggreylight {
   background-color: rgb(244, 244, 244);
 }
-.menu__block__maintitle {
+.menu__section__maintitle {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.menu__block .maintitle__icon {
+.menu__section .maintitle__icon {
   position: absolute;
   right: 10px;
 }
-.menu__block h1 {
+.menu__section h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 26px;
 }
 
-.menu__title {
+.menu__titles {
   font-weight: inherit;
   font-size: 18px;
   color: #737373;
 }
-.menu__title::after {
+.menu__titles::after {
   content: "";
   display: block;
   width: 45px;
@@ -643,10 +644,6 @@ footer a {
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
-}
-.cards__description--bgwhite {
-  background-color: #fff;
 }
 .cards__description__title {
   padding: 15px;
@@ -660,21 +657,24 @@ footer a {
   font-size: 14px;
   width: 20%;
 }
-.cards__description--shadow {
+
+.cards__design--bgwhite {
+  background-color: #fff;
+}
+.cards__design--shadow {
   box-shadow: 0px 2px 6px rgb(181, 181, 181);
 }
-.cards__description:hover .cards__description__icon {
+
+.cards__animation {
+  overflow: hidden;
+}
+.cards__animation:hover .cards__description__icon {
   margin-right: 0;
 }
-.cards__description:hover .fa-circle-check {
+.cards__animation:hover .fa-circle-check {
   transform: rotate(1turn);
 }
-
-.fa-circle-check {
-  transition: transform 1.75s ease;
-}
-
-.cards__description__icon {
+.cards__animation .cards__description__icon {
   margin-right: -70px;
   display: flex;
   width: 20%;
@@ -684,6 +684,9 @@ footer a {
   align-items: center;
   color: #fff;
   transition: margin-right 1.5s ease;
+}
+.cards__animation .fa-circle-check {
+  transition: transform 1.75s ease;
 }
 
 form {
