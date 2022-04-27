@@ -92,6 +92,23 @@ $color-footer-font: rgb(236, 234, 234);
     cursor: pointer;
 }
 
+@mixin cards--checkanimation {
+    margin-right: -70px; 
+    display: flex; 
+    width: 20%; 
+    background-color: $color-tertiaire;
+    border-radius: 0 20px 20px 0;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+}
+
+/*-- Keyframes --*/ 
+@keyframes appearance {
+    100% {
+        opacity: 1; 
+    }
+}
 
  /*-- Polices--*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
@@ -393,6 +410,7 @@ footer {
     font-weight: inherit;
     font-size: 18px;
     color: $lighten-header;
+    opacity: 0; 
 
     &::after {
         content: "";
@@ -403,6 +421,22 @@ footer {
         background-color: $color-tertiaire; 
     }
 }
+
+.title__animation {
+    &--anim1 {
+        animation: appearance 1s ease-in-out 1.5s forwards;
+    }
+
+    &--anim2 {
+        animation: appearance 1s ease-in-out 5s forwards;
+    }
+
+    &--anim3 {
+        animation: appearance 1s ease-in-out 8s forwards;
+    }
+}
+
+
 
 .cards__description {
     @include menu__cards--description;
@@ -435,6 +469,7 @@ footer {
 
 .cards__animation {
     overflow: hidden;
+    opacity: 0;
 
     &:hover .cards__description__icon{
         margin-right: 0;
@@ -445,22 +480,74 @@ footer {
     }
 
     .cards__description__icon {
-        margin-right: -70px; 
-        display: flex; 
-        width: 20%; 
-        background-color: $color-tertiaire;
-        border-radius: 0 20px 20px 0;
-        justify-content: center;
-        align-items: center; 
-        color: #fff;
+        @include cards--checkanimation; 
         transition: margin-right 1.5s ease; 
-    
     }
 
     .fa-circle-check {
         transition: transform 1.75s ease; 
     }
 }
+
+.cards__animation {
+    /*--Bloc1--*/ 
+    &--1 {
+        animation: appearance 1s ease-in-out 2.5s forwards; 
+    }
+
+    &--2 {
+        animation: appearance 1s ease-in-out 3s forwards; 
+    }
+
+    &--3 {
+        animation: appearance 1s ease-in-out 3.5s forwards; 
+    }
+
+    /*--specific page3--*/ 
+    &--4 {
+        animation: appearance 1s ease-in-out 4s forwards; 
+    }
+
+    /*--bloc2--*/ 
+    &--1_2 {
+        animation: appearance 1s ease-in-out 6s forwards; 
+    }
+
+    &--2_2 {
+        animation: appearance 1s ease-in-out 6.5s forwards; 
+    }
+
+    &--3_2 {
+        animation: appearance 1s ease-in-out 7s forwards; 
+    }
+
+    /*--bloc3--*/ 
+    &--1_3 {
+        animation: appearance 1s ease-in-out 9s forwards; 
+    }
+
+    &--2_3 {
+        animation: appearance 1s ease-in-out 9.5s forwards; 
+    }
+
+    &--3_3 {
+        animation: appearance 1s ease-in-out 10s forwards; 
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
 
 
 
