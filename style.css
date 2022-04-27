@@ -536,20 +536,6 @@ h4 {
   gap: 20px;
 }
 
-.button__fav {
-  background: none;
-  border: none;
-}
-
-.fa-heart:active {
-  font-weight: 900;
-  background: linear-gradient(356deg, #9356DC 29%, #FF79DA 87%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  color: transparent;
-  cursor: pointer;
-}
-
 footer {
   padding: 20px 20px;
   background-color: #3b3a3a;
@@ -758,6 +744,80 @@ form {
 .button:hover {
   opacity: 0.8;
   box-shadow: 0px 1px 6px black;
+}
+
+/*--fav button--*/
+.button__fav {
+  background: none;
+  border: none;
+}
+
+.fa-heart:active {
+  font-weight: 900;
+  background: linear-gradient(356deg, #9356DC 29%, #FF79DA 87%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+/*--loader--*/
+.loader {
+  /*--disposition--*/
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(356deg, #9356DC 29%, #FF79DA 87%);
+  color: transparent;
+  z-index: 1;
+  /*--design--*/
+  font-family: "Shrikhand", sans-serif;
+  font-weight: inherit;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+}
+.loader::before {
+  content: "";
+  align-self: flex-start;
+  width: 50%;
+  height: 2px;
+  left: 0;
+  background-color: white;
+  opacity: 0;
+  animation: load 0.8s ease infinite alternate backwards;
+}
+.loader::after {
+  content: "";
+  align-self: flex-end;
+  width: 50%;
+  height: 2px;
+  left: 0;
+  background-color: white;
+  opacity: 0;
+  animation: load 0.8s ease infinite alternate backwards;
+}
+@keyframes load {
+  0% {
+    opacity: 0.25;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  50% {
+    opacity: 0.5;
+    height: 4px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  100% {
+    opacity: 1;
+    height: 6px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

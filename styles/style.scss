@@ -320,16 +320,6 @@ h4 {
 }
 
 
-.button__fav {
-    background: none;
-    border: none; 
-}
-
-.fa-heart:active {
-    @include icon--animation; 
-}
-
-
 footer {
     padding: 20px 20px;  
     background-color: $color-footer;
@@ -553,6 +543,91 @@ form {
         opacity: 0.8; 
         box-shadow: 0px 1px 6px black;  
     }
+}
+
+/*--fav button--*/ 
+.button__fav {
+    background: none;
+    border: none; 
+}
+
+.fa-heart:active {
+    @include icon--animation; 
+}
+
+
+/*--loader--*/ 
+.loader {
+
+    /*--disposition--*/
+    display: flex;  
+    flex-direction: column;
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    background: linear-gradient(356deg, $color-primaire 29%, $color-secondary 87%);
+    color: transparent;
+    z-index: 1; 
+
+    /*--design--*/ 
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: inherit; 
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: white; 
+
+
+    &::before {
+        content:"";
+        align-self: flex-start; 
+        width: 50%; 
+        height: 2px;
+        left: 0; 
+        background-color: white;
+        opacity: 0; 
+
+        animation: load 0.8s ease infinite alternate backwards; 
+    }
+
+    &::after {
+        content:"";
+        align-self: flex-end; 
+        width: 50%; 
+        height: 2px;
+        left: 0; 
+        background-color: white;
+        opacity: 0; 
+
+        animation: load 0.8s ease infinite alternate backwards; 
+    }
+
+    @keyframes load {
+        0% {
+            opacity: 0.25; 
+            margin-left: 0px;
+            margin-right: 0px; 
+        }
+
+        50% {
+            opacity: 0.5; 
+            height: 4px; 
+            margin-left: 50px;
+            margin-right: 50px; 
+        }
+
+        100% {
+            opacity: 1; 
+            height: 6px;
+            margin-left: 100px;
+            margin-right: 100px;   
+        }
+    }
+
+
+  
+
+
 }
 
 
