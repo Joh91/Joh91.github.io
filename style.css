@@ -406,19 +406,6 @@ header .fa-solid--dark {
   font-size: 24px;
   font-weight: bold;
 }
-.main__content .main__button {
-  display: inline-block;
-  padding: 15px 45px;
-  border-radius: 30px;
-}
-.main__content .main__button--violet {
-  background: #9356DC;
-  background: linear-gradient(356deg, #9356DC 29%, rgb(255, 121, 218) 87%);
-}
-.main__content .main__button--police {
-  text-decoration: none;
-  color: #fff;
-}
 
 /*--Section2--*/
 .fonction {
@@ -556,7 +543,7 @@ h4 {
 
 .fa-heart:active {
   font-weight: 900;
-  background: linear-gradient(356deg, #9356DC 29%, rgb(255, 121, 218) 87%);
+  background: linear-gradient(356deg, #9356DC 29%, #FF79DA 87%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   color: transparent;
@@ -748,20 +735,29 @@ form {
   align-self: center;
   margin-top: 30px;
 }
-form .services__button {
+
+/*---button---*/
+.button {
   display: inline-block;
   padding: 15px 45px;
   border-radius: 30px;
   border: none;
   color: #fff;
 }
-form .services__button--violet {
+.button--violet {
   background: #9356DC;
-  background: linear-gradient(356deg, #9356DC 29%, rgb(255, 121, 218) 87%);
+  background: linear-gradient(356deg, #9356DC 29%, #FF79DA 87%);
 }
-form .services__button--police {
+.button--police {
   text-decoration: none;
   color: #fff;
+}
+.button--shadow {
+  box-shadow: 0px 2px 6px rgb(181, 181, 181);
+}
+.button:hover {
+  opacity: 0.8;
+  box-shadow: 0px 1px 6px black;
 }
 
 /*# sourceMappingURL=style.css.map */
