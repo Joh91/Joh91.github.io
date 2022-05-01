@@ -620,13 +620,13 @@ footer a {
 }
 
 .title__animation--anim1 {
-  animation: appearance 1s ease-in-out 1.5s forwards;
+  animation: appearance 1s ease-in-out 0.5s forwards;
 }
 .title__animation--anim2 {
-  animation: appearance 1s ease-in-out 5s forwards;
+  animation: appearance 1s ease-in-out 3.5s forwards;
 }
 .title__animation--anim3 {
-  animation: appearance 1s ease-in-out 8s forwards;
+  animation: appearance 1s ease-in-out 6.5s forwards;
 }
 
 .cards__description {
@@ -675,6 +675,7 @@ footer a {
   align-items: center;
   color: #fff;
   transition: margin-right 1.5s ease;
+  cursor: pointer;
 }
 .cards__animation .fa-circle-check {
   transition: transform 1.75s ease;
@@ -687,34 +688,34 @@ footer a {
   /*--bloc3--*/
 }
 .cards__animation--1 {
-  animation: appearance 1s ease-in-out 2.5s forwards;
+  animation: appearance 1s ease-in-out 1s forwards;
 }
 .cards__animation--2 {
-  animation: appearance 1s ease-in-out 3s forwards;
+  animation: appearance 1s ease-in-out 1.5s forwards;
 }
 .cards__animation--3 {
-  animation: appearance 1s ease-in-out 3.5s forwards;
+  animation: appearance 1s ease-in-out 2s forwards;
 }
 .cards__animation--4 {
-  animation: appearance 1s ease-in-out 4s forwards;
+  animation: appearance 1s ease-in-out 2.5s forwards;
 }
 .cards__animation--1_2 {
-  animation: appearance 1s ease-in-out 6s forwards;
+  animation: appearance 1s ease-in-out 4.5s forwards;
 }
 .cards__animation--2_2 {
-  animation: appearance 1s ease-in-out 6.5s forwards;
+  animation: appearance 1s ease-in-out 5s forwards;
 }
 .cards__animation--3_2 {
-  animation: appearance 1s ease-in-out 7s forwards;
+  animation: appearance 1s ease-in-out 5.5s forwards;
 }
 .cards__animation--1_3 {
-  animation: appearance 1s ease-in-out 9s forwards;
+  animation: appearance 1s ease-in-out 7.5s forwards;
 }
 .cards__animation--2_3 {
-  animation: appearance 1s ease-in-out 9.5s forwards;
+  animation: appearance 1s ease-in-out 8s forwards;
 }
 .cards__animation--3_3 {
-  animation: appearance 1s ease-in-out 10s forwards;
+  animation: appearance 1s ease-in-out 8.5s forwards;
 }
 
 form {
@@ -729,6 +730,7 @@ form {
   border-radius: 30px;
   border: none;
   color: #fff;
+  cursor: pointer;
 }
 .button--violet {
   background: #9356DC;
@@ -761,6 +763,11 @@ form {
   cursor: pointer;
 }
 
+/*--content--*/
+.content {
+  position: relative;
+}
+
 /*--loader--*/
 .loader {
   /*--disposition--*/
@@ -768,10 +775,10 @@ form {
   flex-direction: column;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(356deg, #9356DC 29%, #FF79DA 87%);
   color: transparent;
-  z-index: 9999;
+  z-index: 0;
   /*--design--*/
   font-family: "Shrikhand", sans-serif;
   font-weight: inherit;
@@ -784,6 +791,8 @@ form {
 }
 .loader .loadertitle {
   animation: headerload 1.5s ease infinite normal;
+  padding: 15px;
+  font-size: 28px;
 }
 .loader::before {
   content: "";
@@ -841,9 +850,11 @@ form {
 @keyframes loader {
   0% {
     opacity: 1;
+    z-index: 10;
   }
   50% {
     opacity: 0.8;
+    z-index: 10;
   }
   100% {
     opacity: 0;
