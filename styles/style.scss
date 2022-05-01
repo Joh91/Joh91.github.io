@@ -551,7 +551,7 @@ form {
     border: none; 
 }
 
-.fa-heart:active {
+.fa-heart:hover {
     @include icon--animation; 
 }
 
@@ -567,7 +567,7 @@ form {
     height: 100%; 
     background: linear-gradient(356deg, $color-primaire 29%, $color-secondary 87%);
     color: transparent;
-    z-index: 1; 
+    z-index: 9999; 
 
     /*--design--*/ 
     font-family: 'Shrikhand', sans-serif;
@@ -580,7 +580,7 @@ form {
     /*--animation--*/ 
     animation: loader 3s ease normal forwards; 
 
-    h1 {
+    .loadertitle {
         animation: headerload 1.5s ease infinite normal; 
     }
 
@@ -657,6 +657,7 @@ form {
 
         100% {
             opacity: 0; 
+            z-index: 0; 
         }
     }
 }

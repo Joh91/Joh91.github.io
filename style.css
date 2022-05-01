@@ -752,7 +752,7 @@ form {
   border: none;
 }
 
-.fa-heart:active {
+.fa-heart:hover {
   font-weight: 900;
   background: linear-gradient(356deg, #9356DC 29%, #FF79DA 87%);
   -webkit-background-clip: text;
@@ -771,7 +771,7 @@ form {
   height: 100%;
   background: linear-gradient(356deg, #9356DC 29%, #FF79DA 87%);
   color: transparent;
-  z-index: 1;
+  z-index: 9999;
   /*--design--*/
   font-family: "Shrikhand", sans-serif;
   font-weight: inherit;
@@ -782,7 +782,7 @@ form {
   /*--animation--*/
   animation: loader 3s ease normal forwards;
 }
-.loader h1 {
+.loader .loadertitle {
   animation: headerload 1.5s ease infinite normal;
 }
 .loader::before {
@@ -847,6 +847,7 @@ form {
   }
   100% {
     opacity: 0;
+    z-index: 0;
   }
 }
 
