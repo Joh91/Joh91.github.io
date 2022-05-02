@@ -559,6 +559,9 @@ footer a {
   text-decoration: none;
   color: rgb(236, 234, 234);
 }
+footer a:hover {
+  border-bottom: 1px rgb(236, 234, 234) solid;
+}
 
 /*--page 2/3/4/5--*/
 .menu {
@@ -640,7 +643,8 @@ footer a {
   width: 80%;
 }
 .cards__description__price {
-  text-align: center;
+  text-align: right;
+  margin-right: 25px;
   padding-bottom: 15px;
   font-weight: bold;
   align-self: flex-end;
@@ -674,7 +678,7 @@ footer a {
   transform: rotate(1turn);
 }
 .cards__animation .cards__description__icon {
-  margin-right: -70px;
+  margin-right: -145px;
   display: flex;
   width: 20%;
   background-color: #99E2D0;
@@ -762,6 +766,9 @@ form {
   border: none;
 }
 
+.fa-heart {
+  font-size: 20px;
+}
 .fa-heart:hover {
   font-weight: 900;
   background: linear-gradient(356deg, #9356DC 29%, #FF79DA 87%);

@@ -98,7 +98,7 @@ $color-footer-font: rgb(236, 234, 234);
 }
 
 @mixin cards--checkanimation {
-    margin-right: -70px; 
+    margin-right: -145px; 
     display: flex; 
     width: 20%; 
     background-color: $color-tertiaire;
@@ -345,7 +345,11 @@ footer {
 
     a {
         text-decoration: none;
-        color: $color-footer-font
+        color: $color-footer-font;
+
+        &:hover {
+            border-bottom: 1px $color-footer-font solid; 
+        }
     }
 
 
@@ -439,7 +443,8 @@ footer {
     }
     
     &__price {
-        text-align: center;
+        text-align: right;
+        margin-right: 25px; 
         padding-bottom: 15px;
         font-weight: bold;
         align-self: flex-end;
@@ -560,9 +565,12 @@ form {
     background: none;
     border: none; 
 }
+.fa-heart {
+    font-size: 20px; 
 
-.fa-heart:hover {
-    @include icon--animation; 
+    &:hover {
+        @include icon--animation; 
+    }
 }
 
 /*--content--*/ 
