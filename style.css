@@ -648,6 +648,14 @@ footer a {
   width: 20%;
 }
 
+.cards__description a {
+  border: inherit;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  width: 100%;
+}
+
 .cards__design--bgwhite {
   background-color: #fff;
 }
@@ -674,11 +682,11 @@ footer a {
   justify-content: center;
   align-items: center;
   color: #fff;
-  transition: margin-right 1.5s ease;
+  transition: margin-right 1s ease;
   cursor: pointer;
 }
 .cards__animation .fa-circle-check {
-  transition: transform 1.75s ease;
+  transition: transform 1.1s ease;
 }
 
 .cards__animation {
