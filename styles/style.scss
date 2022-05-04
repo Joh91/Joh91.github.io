@@ -98,7 +98,7 @@ $color-footer-font: rgb(236, 234, 234);
 }
 
 @mixin cards--checkanimation {
-    margin-right: -145px; 
+    margin-right: -170px; 
     display: flex; 
     width: 20%; 
     background-color: $color-tertiaire;
@@ -133,7 +133,7 @@ margin: 30px auto 20px;
         text-align: center; 
 
         & img {
-            width: 50%; 
+            width: 200px; 
         }
     }
 
@@ -352,10 +352,22 @@ footer {
         }
     }
 
-
+    @media screen and (min-width: 750px) and (max-width: 992px) {
+        padding: 20px 0px 40px 50px; 
+    } 
 }
 
 /*--page 2/3/4/5--*/ 
+ .menu__header {
+  
+
+    .header_logo {
+        display: flex; 
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
 .menu {
     padding: 0; 
  
@@ -371,6 +383,7 @@ footer {
         width: 100%; 
         object-fit: cover; 
     }
+
 }
 
 .menu__section {
@@ -400,6 +413,10 @@ footer {
          font-family: 'Shrikhand', sans-serif;
          font-size: 26px; 
      }
+
+     @media screen and (min-width: 750px) and (max-width: 992px) {
+        padding: 30px 90px; 
+    }
 }
 
 .menu__titles {
