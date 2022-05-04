@@ -21,6 +21,10 @@ $color-footer-font: rgb(236, 234, 234);
     align-items: center;
     padding: 10px; 
     gap: 10px; 
+
+    @media screen and (min-width: 700px) {
+        width: 70%;  
+    }
 }
 
 @mixin services__card--structure {
@@ -28,6 +32,10 @@ $color-footer-font: rgb(236, 234, 234);
     flex-direction: column;  
     border-radius: 30px;
     width: 100%;
+
+    @media screen and (min-width: 700px) {
+        width: 70%;  
+    }
 }
 
 @mixin shadow__cards {
@@ -191,12 +199,26 @@ margin: 30px auto 20px;
 /*--Section2--*/ 
 .fonction {
     padding: 20px 20px 60px;
+
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+        padding: 20px 30px 60px 30px; 
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; 
+    }
     
     &__description {
         display: flex; 
         flex-direction: column; 
         gap: 20px; 
+
+        @media screen and (min-width: 650px) and (max-width: 992px) {
+            width: 100%; 
+            align-items: center;
+        }
     }
+
 }
 
 
@@ -246,6 +268,14 @@ margin: 30px auto 20px;
 .services {
     padding: 20px 20px 40px; 
 
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+        padding: 20px 30px 20px 30px; 
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+
     &--bggreylight {
         background-color: $color-background-grey;
     }
@@ -253,9 +283,17 @@ margin: 30px auto 20px;
     &__list {
     display: flex;
     flex-direction: column; 
+    align-items: center;
     gap: 30px; 
     padding: 20px 0 40px;
+
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+        width: 100%; 
+        align-items: center;
     }
+    }
+
+    
 }
 
 .services__card {
@@ -358,15 +396,12 @@ footer {
 }
 
 /*--page 2/3/4/5--*/ 
- .menu__header {
-  
-
     .header_logo {
         display: flex; 
         justify-content: space-between;
         align-items: flex-end;
     }
-}
+
 
 .menu {
     padding: 0; 
@@ -414,7 +449,7 @@ footer {
          font-size: 26px; 
      }
 
-     @media screen and (min-width: 750px) and (max-width: 992px) {
+     @media screen and (min-width: 650px) and (max-width: 992px) {
         padding: 30px 90px; 
     }
 }

@@ -411,10 +411,25 @@ header .fa-solid--dark {
 .fonction {
   padding: 20px 20px 60px;
 }
+@media screen and (min-width: 650px) and (max-width: 992px) {
+  .fonction {
+    padding: 20px 30px 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
 .fonction__description {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media screen and (min-width: 650px) and (max-width: 992px) {
+  .fonction__description {
+    width: 100%;
+    align-items: center;
+  }
 }
 
 .fonction__onglets {
@@ -424,6 +439,11 @@ header .fa-solid--dark {
   gap: 10px;
   border-radius: 15px;
   position: relative;
+}
+@media screen and (min-width: 700px) {
+  .fonction__onglets {
+    width: 70%;
+  }
 }
 .fonction__onglets--bggreylight {
   background: rgb(244, 244, 244);
@@ -445,6 +465,11 @@ header .fa-solid--dark {
   gap: 10px;
   padding-left: 30px;
 }
+@media screen and (min-width: 700px) {
+  .fonction__onglets__description {
+    width: 70%;
+  }
+}
 
 .fonction__onglets__number {
   position: absolute;
@@ -461,14 +486,30 @@ header .fa-solid--dark {
 .services {
   padding: 20px 20px 40px;
 }
+@media screen and (min-width: 650px) and (max-width: 992px) {
+  .services {
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
 .services--bggreylight {
   background-color: rgb(244, 244, 244);
 }
 .services__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
   padding: 20px 0 40px;
+}
+@media screen and (min-width: 650px) and (max-width: 992px) {
+  .services__list {
+    width: 100%;
+    align-items: center;
+  }
 }
 
 .services__card {
@@ -479,6 +520,11 @@ header .fa-solid--dark {
   box-shadow: 0px 2px 6px rgb(181, 181, 181);
   transform: scale(1);
   transition: transform 0.25s;
+}
+@media screen and (min-width: 700px) {
+  .services__card {
+    width: 70%;
+  }
 }
 .services__card:hover {
   transform: scale(1.05);
@@ -569,7 +615,7 @@ footer a:hover {
 }
 
 /*--page 2/3/4/5--*/
-.menu__header .header_logo {
+.header_logo {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -617,7 +663,7 @@ footer a:hover {
   font-family: "Shrikhand", sans-serif;
   font-size: 26px;
 }
-@media screen and (min-width: 750px) and (max-width: 992px) {
+@media screen and (min-width: 650px) and (max-width: 992px) {
   .menu__section {
     padding: 30px 90px;
   }
