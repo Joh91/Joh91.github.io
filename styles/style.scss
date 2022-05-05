@@ -104,7 +104,7 @@ $color-footer-font: rgb(236, 234, 234);
 }
 
 @mixin cards--checkanimation {
-    margin-right: -170px; 
+    margin-right: -250px; 
     display: flex; 
     width: 20%; 
     background-color: $color-tertiaire;
@@ -259,6 +259,10 @@ margin: 30px auto 20px;
 .fonction__onglets__description {
     @include fonction__onglets; 
     padding-left: 30px;  
+
+    @media screen and (min-width: 993px) {
+        justify-content: center;
+    }
     }
 
 .fonction__onglets__number {
@@ -405,7 +409,7 @@ footer {
         }
     }
 
-    @media screen and (min-width: 750px) and (max-width: 992px) {
+    @media screen and (min-width: 750px)  {
         padding: 20px 0px 40px 50px; 
     } 
 }
@@ -440,8 +444,15 @@ footer {
     @include menu__section--structure;
     display: flex; 
     flex-direction: column;
-    
- 
+
+    @media screen and (min-width: 650px)  {
+        padding: 30px 90px; 
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 30px 130px; 
+    }
 
      &--bggreylight {
          background-color: $color-background-grey;
@@ -463,10 +474,6 @@ footer {
          font-family: 'Shrikhand', sans-serif;
          font-size: 26px; 
      }
-
-     @media screen and (min-width: 650px) and (max-width: 992px) {
-        padding: 30px 90px; 
-    }
 }
 
 .menu__titles {
@@ -487,15 +494,15 @@ footer {
 
 .title__animation {
     &--anim1 {
-        animation: appearance 1s ease-in-out 0.5s forwards;
+        animation: appearance 1s ease-in-out 0.25s forwards;
     }
 
     &--anim2 {
-        animation: appearance 1s ease-in-out 3.5s forwards;
+        animation: appearance 1s ease-in-out 2s forwards;
     }
 
     &--anim3 {
-        animation: appearance 1s ease-in-out 6.5s forwards;
+        animation: appearance 1s ease-in-out 4.5s forwards;
     }
 }
 
@@ -503,6 +510,11 @@ footer {
 
 .cards__description {
     @include menu__cards--description;
+
+    @media screen and (min-width: 650px) {
+        width: 70%
+    }
+
 
     &__title {
         padding: 15px;
@@ -565,46 +577,46 @@ footer {
 .cards__animation {
     /*--Bloc1--*/ 
     &--1 {
-        animation: appearance 1s ease-in-out 1s forwards; 
+        animation: appearance 1s ease-in-out 0.5s forwards; 
     }
 
     &--2 {
-        animation: appearance 1s ease-in-out 1.5s forwards; 
+        animation: appearance 1s ease-in-out 1s forwards; 
     }
 
     &--3 {
-        animation: appearance 1s ease-in-out 2s forwards; 
+        animation: appearance 1s ease-in-out 1.5s forwards; 
     }
 
     /*--specific page3--*/ 
     &--4 {
-        animation: appearance 1s ease-in-out 2.5s forwards; 
+        animation: appearance 1s ease-in-out 2.25s forwards; 
     }
 
     /*--bloc2--*/ 
     &--1_2 {
-        animation: appearance 1s ease-in-out 4.5s forwards; 
+        animation: appearance 1s ease-in-out 3s forwards; 
     }
 
     &--2_2 {
-        animation: appearance 1s ease-in-out 5s forwards; 
+        animation: appearance 1s ease-in-out 3.5s forwards; 
     }
 
     &--3_2 {
-        animation: appearance 1s ease-in-out 5.5s forwards; 
+        animation: appearance 1s ease-in-out 4s forwards; 
     }
 
     /*--bloc3--*/ 
     &--1_3 {
-        animation: appearance 1s ease-in-out 7.5s forwards; 
+        animation: appearance 1s ease-in-out 4.75s forwards; 
     }
 
     &--2_3 {
-        animation: appearance 1s ease-in-out 8s forwards; 
+        animation: appearance 1s ease-in-out 5.5s forwards; 
     }
 
     &--3_3 {
-        animation: appearance 1s ease-in-out 8.5s forwards; 
+        animation: appearance 1s ease-in-out 6s forwards; 
     }
 }
 

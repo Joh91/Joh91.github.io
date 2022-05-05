@@ -474,6 +474,11 @@ header .fa-solid--dark {
   width: 100%;
   padding-left: 30px;
 }
+@media screen and (min-width: 993px) {
+  .fonction__onglets__description {
+    justify-content: center;
+  }
+}
 
 .fonction__onglets__number {
   position: absolute;
@@ -616,7 +621,7 @@ footer a {
 footer a:hover {
   border-bottom: 1px rgb(236, 234, 234) solid;
 }
-@media screen and (min-width: 750px) and (max-width: 992px) {
+@media screen and (min-width: 750px) {
   footer {
     padding: 20px 0px 40px 50px;
   }
@@ -654,6 +659,17 @@ footer a:hover {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 650px) {
+  .menu__section {
+    padding: 30px 90px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__section {
+    padding: 30px 130px;
+  }
+}
 .menu__section--bggreylight {
   background-color: rgb(244, 244, 244);
 }
@@ -670,11 +686,6 @@ footer a:hover {
 .menu__section h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 26px;
-}
-@media screen and (min-width: 650px) and (max-width: 992px) {
-  .menu__section {
-    padding: 30px 90px;
-  }
 }
 
 .menu__titles {
@@ -693,13 +704,13 @@ footer a:hover {
 }
 
 .title__animation--anim1 {
-  animation: appearance 1s ease-in-out 0.5s forwards;
+  animation: appearance 1s ease-in-out 0.25s forwards;
 }
 .title__animation--anim2 {
-  animation: appearance 1s ease-in-out 3.5s forwards;
+  animation: appearance 1s ease-in-out 2s forwards;
 }
 .title__animation--anim3 {
-  animation: appearance 1s ease-in-out 6.5s forwards;
+  animation: appearance 1s ease-in-out 4.5s forwards;
 }
 
 .cards__description {
@@ -707,6 +718,11 @@ footer a:hover {
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 650px) {
+  .cards__description {
+    width: 70%;
+  }
 }
 .cards__description__title {
   padding: 15px;
@@ -748,7 +764,7 @@ footer a:hover {
   transform: rotate(1turn);
 }
 .cards__animation .cards__description__icon {
-  margin-right: -170px;
+  margin-right: -250px;
   display: flex;
   width: 20%;
   background-color: #99E2D0;
@@ -770,34 +786,34 @@ footer a:hover {
   /*--bloc3--*/
 }
 .cards__animation--1 {
-  animation: appearance 1s ease-in-out 1s forwards;
+  animation: appearance 1s ease-in-out 0.5s forwards;
 }
 .cards__animation--2 {
-  animation: appearance 1s ease-in-out 1.5s forwards;
+  animation: appearance 1s ease-in-out 1s forwards;
 }
 .cards__animation--3 {
-  animation: appearance 1s ease-in-out 2s forwards;
+  animation: appearance 1s ease-in-out 1.5s forwards;
 }
 .cards__animation--4 {
-  animation: appearance 1s ease-in-out 2.5s forwards;
+  animation: appearance 1s ease-in-out 2.25s forwards;
 }
 .cards__animation--1_2 {
-  animation: appearance 1s ease-in-out 4.5s forwards;
+  animation: appearance 1s ease-in-out 3s forwards;
 }
 .cards__animation--2_2 {
-  animation: appearance 1s ease-in-out 5s forwards;
+  animation: appearance 1s ease-in-out 3.5s forwards;
 }
 .cards__animation--3_2 {
-  animation: appearance 1s ease-in-out 5.5s forwards;
+  animation: appearance 1s ease-in-out 4s forwards;
 }
 .cards__animation--1_3 {
-  animation: appearance 1s ease-in-out 7.5s forwards;
+  animation: appearance 1s ease-in-out 4.75s forwards;
 }
 .cards__animation--2_3 {
-  animation: appearance 1s ease-in-out 8s forwards;
+  animation: appearance 1s ease-in-out 5.5s forwards;
 }
 .cards__animation--3_3 {
-  animation: appearance 1s ease-in-out 8.5s forwards;
+  animation: appearance 1s ease-in-out 6s forwards;
 }
 
 form {
