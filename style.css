@@ -411,13 +411,18 @@ header .fa-solid--dark {
 .fonction {
   padding: 20px 20px 60px;
 }
-@media screen and (min-width: 650px) and (max-width: 992px) {
+@media screen and (min-width: 650px) {
   .fonction {
-    padding: 20px 30px 60px 30px;
+    padding: 20px 120px 60px 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .fonction {
+    padding: 20px 40px 60px 40px;
   }
 }
 .fonction__description {
@@ -425,10 +430,17 @@ header .fa-solid--dark {
   flex-direction: column;
   gap: 20px;
 }
-@media screen and (min-width: 650px) and (max-width: 992px) {
+@media screen and (min-width: 650px) {
   .fonction__description {
     width: 100%;
     align-items: center;
+  }
+}
+@media screen and (min-width: 993px) {
+  .fonction__description {
+    width: 90%;
+    flex-direction: row;
+    gap: 60px;
   }
 }
 
@@ -437,13 +449,9 @@ header .fa-solid--dark {
   align-items: center;
   padding: 10px;
   gap: 10px;
+  width: 100%;
   border-radius: 15px;
   position: relative;
-}
-@media screen and (min-width: 700px) {
-  .fonction__onglets {
-    width: 70%;
-  }
 }
 .fonction__onglets--bggreylight {
   background: rgb(244, 244, 244);
@@ -463,12 +471,8 @@ header .fa-solid--dark {
   align-items: center;
   padding: 10px;
   gap: 10px;
+  width: 100%;
   padding-left: 30px;
-}
-@media screen and (min-width: 700px) {
-  .fonction__onglets__description {
-    width: 70%;
-  }
 }
 
 .fonction__onglets__number {
@@ -486,13 +490,13 @@ header .fa-solid--dark {
 .services {
   padding: 20px 20px 40px;
 }
-@media screen and (min-width: 650px) and (max-width: 992px) {
+@media screen and (min-width: 650px) {
   .services {
     padding: 20px 30px 20px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 0px;
   }
 }
 .services--bggreylight {
@@ -508,7 +512,11 @@ header .fa-solid--dark {
 @media screen and (min-width: 650px) and (max-width: 992px) {
   .services__list {
     width: 100%;
-    align-items: center;
+  }
+}
+@media screen and (min-width: 993px) {
+  .services__list {
+    flex-direction: row;
   }
 }
 
@@ -523,7 +531,7 @@ header .fa-solid--dark {
 }
 @media screen and (min-width: 700px) {
   .services__card {
-    width: 70%;
+    width: 75%;
   }
 }
 .services__card:hover {

@@ -21,10 +21,8 @@ $color-footer-font: rgb(236, 234, 234);
     align-items: center;
     padding: 10px; 
     gap: 10px; 
-
-    @media screen and (min-width: 700px) {
-        width: 70%;  
-    }
+    width: 100%; 
+   
 }
 
 @mixin services__card--structure {
@@ -34,7 +32,7 @@ $color-footer-font: rgb(236, 234, 234);
     width: 100%;
 
     @media screen and (min-width: 700px) {
-        width: 70%;  
+        width: 75%;  
     }
 }
 
@@ -200,12 +198,17 @@ margin: 30px auto 20px;
 .fonction {
     padding: 20px 20px 60px;
 
-    @media screen and (min-width: 650px) and (max-width: 992px) {
-        padding: 20px 30px 60px 30px; 
+    @media screen and (min-width: 650px) {
+        padding: 20px 120px 60px 120px; 
         display: flex; 
         flex-direction: column;
         align-items: center;
         gap: 30px; 
+    }
+
+    @media screen and (min-width: 993px) {
+        padding: 20px 40px 60px 40px; 
+        
     }
     
     &__description {
@@ -213,9 +216,16 @@ margin: 30px auto 20px;
         flex-direction: column; 
         gap: 20px; 
 
-        @media screen and (min-width: 650px) and (max-width: 992px) {
+        @media screen and (min-width: 650px){
             width: 100%; 
             align-items: center;
+        }
+
+        @media screen and (min-width: 993px){
+            width: 90%; 
+            flex-direction: row;
+            gap: 60px;  
+
         }
     }
 
@@ -248,7 +258,7 @@ margin: 30px auto 20px;
 
 .fonction__onglets__description {
     @include fonction__onglets; 
-    padding-left: 30px;   
+    padding-left: 30px;  
     }
 
 .fonction__onglets__number {
@@ -268,13 +278,14 @@ margin: 30px auto 20px;
 .services {
     padding: 20px 20px 40px; 
 
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) {
         padding: 20px 30px 20px 30px; 
         display: flex; 
         flex-direction: column;
         align-items: center;
-        gap: 10px; 
+        gap: 0px; 
     }
+
 
     &--bggreylight {
         background-color: $color-background-grey;
@@ -289,8 +300,12 @@ margin: 30px auto 20px;
 
     @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 100%; 
-        align-items: center;
     }
+
+    @media screen and (min-width: 993px) {
+        flex-direction: row;
+    }
+
     }
 
     
