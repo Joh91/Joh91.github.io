@@ -486,6 +486,11 @@ header .fa-solid--dark {
   padding: 4px 9px;
   border-radius: 100px;
 }
+@media screen and (min-width: 993px) {
+  .fonction__onglets__number {
+    left: 5px;
+  }
+}
 .fonction__onglets__number--violet {
   background-color: #9356DC;
   color: #fff;

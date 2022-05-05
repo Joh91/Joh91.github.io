@@ -271,6 +271,10 @@ margin: 30px auto 20px;
     padding: 4px 9px; 
     border-radius: 100px;
 
+    @media screen and (min-width: 993px ) {
+        left: 5px; 
+    }
+
     &--violet {
         background-color: $color-primaire;
         color: #fff; 
