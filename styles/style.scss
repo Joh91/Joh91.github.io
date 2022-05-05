@@ -468,6 +468,10 @@ footer {
      .maintitle__icon {
          position: absolute; 
          right: 10px;
+
+         @media screen and (min-width: 650px) {
+            right: -80px; 
+         }
      }
 
      h1 {
