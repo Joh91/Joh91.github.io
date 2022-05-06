@@ -581,7 +581,7 @@ form {
 
 /*--Layout--*/
 header {
-  margin: 30px auto 20px;
+  padding: 30px 50px 20px;
 }
 header .header__logo {
   text-align: center;
