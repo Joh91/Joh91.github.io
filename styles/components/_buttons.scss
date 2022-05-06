@@ -1,10 +1,12 @@
+
+/*--specific button menu's page--*/ 
 form {
     align-self: center; 
     margin-top: 30px; 
 }
 
 
-/*---button---*/ 
+/*---buttons---*/ 
 .button {
     @include button; 
     border: none; 
@@ -14,5 +16,20 @@ form {
     &:hover {
         opacity: 0.8; 
         box-shadow: 0px 1px 6px black;  
+    }
+}
+
+
+/*--fav buttons--*/ 
+.button__fav {
+    background: none;
+    border: none; 
+}
+
+.fa-heart {
+    font-size: 20px; 
+
+    &:hover {
+        @include icon--animation; 
     }
 }

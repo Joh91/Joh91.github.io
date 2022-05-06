@@ -408,17 +408,7 @@ body {
     z-index: 0;
   }
 }
-/*components*/
-.title__animation--anim1 {
-  animation: appearance 1s ease-in-out 0.25s forwards;
-}
-.title__animation--anim2 {
-  animation: appearance 1s ease-in-out 2s forwards;
-}
-.title__animation--anim3 {
-  animation: appearance 1s ease-in-out 4.5s forwards;
-}
-
+/*--Cards-check-anim--*/
 .cards__animation {
   overflow: hidden;
   opacity: 0;
@@ -445,6 +435,7 @@ body {
   transition: transform 1.1s ease;
 }
 
+/*--Cards-appear-anim--*/
 .cards__animation {
   /*--Bloc1--*/
   /*--specific page3--*/
@@ -482,12 +473,25 @@ body {
   animation: appearance 1s ease-in-out 6s forwards;
 }
 
+/*--Titles-appear-anim--*/
+.title__animation--anim1 {
+  animation: appearance 1s ease-in-out 0.25s forwards;
+}
+.title__animation--anim2 {
+  animation: appearance 1s ease-in-out 2s forwards;
+}
+.title__animation--anim3 {
+  animation: appearance 1s ease-in-out 4.5s forwards;
+}
+
+/*components*/
+/*--specific button menu's page--*/
 form {
   align-self: center;
   margin-top: 30px;
 }
 
-/*---button---*/
+/*---buttons---*/
 .button {
   display: inline-block;
   padding: 15px 45px;
@@ -511,7 +515,7 @@ form {
   box-shadow: 0px 1px 6px black;
 }
 
-/*--fav button--*/
+/*--fav buttons--*/
 .button__fav {
   background: none;
   border: none;
@@ -538,7 +542,6 @@ form {
   width: 100%;
   height: 100%;
   background: linear-gradient(356deg, #9356DC 29%, #FF79DA 87%);
-  color: transparent;
   z-index: 0;
   /*--design--*/
   font-family: "Shrikhand", sans-serif;

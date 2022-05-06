@@ -1,3 +1,5 @@
+
+/*--Cards-check-anim--*/ 
 .cards__animation {
     overflow: hidden;
     opacity: 0;
@@ -21,6 +23,8 @@
     }
 }
 
+
+/*--Cards-appear-anim--*/ 
 .cards__animation {
     /*--Bloc1--*/ 
     &--1 {
@@ -64,5 +68,20 @@
 
     &--3_3 {
         animation: appearance 1s ease-in-out 6s forwards; 
+    }
+}
+
+/*--Titles-appear-anim--*/ 
+.title__animation {
+    &--anim1 {
+        animation: appearance 1s ease-in-out 0.25s forwards;
+    }
+
+    &--anim2 {
+        animation: appearance 1s ease-in-out 2s forwards;
+    }
+
+    &--anim3 {
+        animation: appearance 1s ease-in-out 4.5s forwards;
     }
 }

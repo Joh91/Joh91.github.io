@@ -10,13 +10,11 @@
 @import "./utils/variables"; 
 @import "./utils/mixins"; 
 @import "./utils/keyframes"; 
+@import "./utils/anim"; 
 
 
-/*components*/ 
-@import "./components/menutitleanim"; 
-@import "./components/menucardsanim"; 
+/*components*/  
 @import "./components/buttons"; 
-@import "./components/favbutton";
 @import "./components/loader"; 
 
 /*--Layout--*/ 
