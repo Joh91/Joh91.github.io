@@ -1,0 +1,97 @@
+/*--Mixins--*/ 
+@mixin fonction__onglets {
+    display: flex; 
+    align-items: center;
+    padding: 10px; 
+    gap: 10px; 
+    width: 100%; 
+   
+}
+
+@mixin services__card--structure {
+    display: flex; 
+    flex-direction: column;  
+    border-radius: 30px;
+    width: 100%;
+
+    @media screen and (min-width: 700px) {
+        width: 75%;  
+    }
+}
+
+@mixin shadow__cards {
+    box-shadow: 0px 2px 6px $color-shadow; 
+}
+
+@mixin card__link--fix {
+    text-decoration: none;
+    color: black;
+}
+
+@mixin bandeau--graphic {
+    background-color: $color-tertiaire;
+    color: $darken-mint;
+    font-size: 14px;
+}
+
+@mixin bandeau--struture {
+    position: absolute; 
+    top: 20px; 
+    right: 15px;
+    padding: 5px; 
+}
+
+@mixin menu__section--structure {
+    padding: 20px 20px 75px; 
+    margin-top: -60px; 
+    position: relative; 
+    z-index: 1;
+    border-radius: 40px 40px 0 0; 
+    width: 100%;
+}
+
+@mixin menu__cards--description {
+    margin-bottom: 30px;
+    border-radius: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+@mixin button {
+    display: inline-block; 
+    padding: 15px 45px; 
+    border-radius: 30px;
+
+    &--violet {
+        background: linear-gradient(356deg, $color-primaire 29%, $color-secondary 87%);
+    } 
+
+    &--police {
+        text-decoration: none;
+        color: #fff; 
+    }
+
+    &--shadow {
+        box-shadow: 0px 2px 6px $color-shadow
+    }
+}
+
+@mixin icon--animation {
+    font-weight: 900; 
+    background: linear-gradient(356deg, $color-primaire 29%, $color-secondary 87%); 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent; 
+    cursor: pointer;
+}
+
+@mixin cards--checkanimation {
+    margin-right: -250px; 
+    display: flex; 
+    width: 20%; 
+    background-color: $color-tertiaire;
+    border-radius: 0 20px 20px 0;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+}

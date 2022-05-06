@@ -1,0 +1,36 @@
+footer {
+    padding: 20px 20px;  
+    background-color: $color-footer;
+    color: $color-footer-font; 
+
+    .footer__title {
+        font-family: 'Shrikhand', sans-serif;
+        font-weight: inherit; 
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    i {
+        padding-right: 10px; 
+    }
+
+    li {
+        padding-bottom: 10px; 
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-footer-font;
+
+        &:hover {
+            border-bottom: 1px $color-footer-font solid; 
+        }
+    }
+
+    @media screen and (min-width: 750px)  {
+        padding: 20px 0px 40px 50px; 
+    } 
+}

@@ -1,0 +1,68 @@
+.cards__animation {
+    overflow: hidden;
+    opacity: 0;
+
+    &:hover .cards__description__icon{
+        margin-right: 0;
+    }
+
+    &:hover .fa-circle-check {
+        transform: rotate(1turn);
+    }
+
+    .cards__description__icon {
+        @include cards--checkanimation; 
+        transition: margin-right 1s ease; 
+        cursor: pointer;
+    }
+
+    .fa-circle-check {
+        transition: transform 1.1s ease; 
+    }
+}
+
+.cards__animation {
+    /*--Bloc1--*/ 
+    &--1 {
+        animation: appearance 1s ease-in-out 0.5s forwards; 
+    }
+
+    &--2 {
+        animation: appearance 1s ease-in-out 1s forwards; 
+    }
+
+    &--3 {
+        animation: appearance 1s ease-in-out 1.5s forwards; 
+    }
+
+    /*--specific page3--*/ 
+    &--4 {
+        animation: appearance 1s ease-in-out 2.25s forwards; 
+    }
+
+    /*--bloc2--*/ 
+    &--1_2 {
+        animation: appearance 1s ease-in-out 3s forwards; 
+    }
+
+    &--2_2 {
+        animation: appearance 1s ease-in-out 3.5s forwards; 
+    }
+
+    &--3_2 {
+        animation: appearance 1s ease-in-out 4s forwards; 
+    }
+
+    /*--bloc3--*/ 
+    &--1_3 {
+        animation: appearance 1s ease-in-out 4.75s forwards; 
+    }
+
+    &--2_3 {
+        animation: appearance 1s ease-in-out 5.5s forwards; 
+    }
+
+    &--3_3 {
+        animation: appearance 1s ease-in-out 6s forwards; 
+    }
+}

@@ -1,0 +1,12 @@
+/*--fav button--*/ 
+.button__fav {
+    background: none;
+    border: none; 
+}
+.fa-heart {
+    font-size: 20px; 
+
+    &:hover {
+        @include icon--animation; 
+    }
+}

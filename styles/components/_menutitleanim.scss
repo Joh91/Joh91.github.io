@@ -1,0 +1,13 @@
+.title__animation {
+    &--anim1 {
+        animation: appearance 1s ease-in-out 0.25s forwards;
+    }
+
+    &--anim2 {
+        animation: appearance 1s ease-in-out 2s forwards;
+    }
+
+    &--anim3 {
+        animation: appearance 1s ease-in-out 4.5s forwards;
+    }
+}

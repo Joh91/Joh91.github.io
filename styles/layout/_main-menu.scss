@@ -1,0 +1,115 @@
+.menu {
+    padding: 0; 
+ 
+    &__background {
+    height: 300px; 
+    width: 100%;
+    position: relative; 
+    z-index: 0; 
+    }
+    
+    img {
+        height: 100%; 
+        width: 100%; 
+        object-fit: cover; 
+    }
+
+}
+
+.menu__section {
+    @include menu__section--structure;
+    display: flex; 
+    flex-direction: column;
+
+    @media screen and (min-width: 650px)  {
+        padding: 30px 90px; 
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 30px 130px; 
+    }
+
+     &--bggreylight {
+         background-color: $color-background-grey;
+     }
+
+     &__maintitle {
+         position: relative; 
+         display: flex; 
+         align-items: center; 
+         justify-content: space-between;
+     }
+
+     .maintitle__icon {
+         position: absolute; 
+         right: 10px;
+
+         @media screen and (min-width: 650px) {
+            right: -80px; 
+         }
+     }
+
+     h1 {
+         font-family: 'Shrikhand', sans-serif;
+         font-size: 26px; 
+     }
+}
+
+.menu__titles {
+    font-weight: inherit;
+    font-size: 18px;
+    color: $lighten-header;
+    opacity: 0; 
+
+    &::after {
+        content: "";
+        display: block; 
+        width: 45px; 
+        height: 3px; 
+        margin-top: 5px; 
+        background-color: $color-tertiaire; 
+    }
+}
+
+.cards__description {
+    @include menu__cards--description;
+
+    @media screen and (min-width: 650px) {
+        width: 70%
+    }
+
+
+    &__title {
+        padding: 15px;
+        width: 80%; 
+    }
+    
+    &__price {
+        text-align: right;
+        margin-right: 25px; 
+        padding-bottom: 15px;
+        font-weight: bold;
+        align-self: flex-end;
+        font-size: 14px; 
+        width: 20%;  
+    }
+}
+
+.cards__description a {
+    border: inherit; 
+    text-decoration: none;
+    color: black; 
+    display: flex; 
+    width: 100%;
+}
+
+.cards__design {
+    &--bgwhite {
+        background-color: #fff;
+    }
+
+    &--shadow {
+        @include shadow__cards; 
+    }
+}
