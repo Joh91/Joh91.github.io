@@ -69,55 +69,6 @@
 }
 
 
-.fonction__onglets {
-    
-    @include fonction__onglets;
-    border-radius: 15px;
-    position: relative; 
-    
-        &--bggreylight {
-            background: $color-background-grey;
-        }
-
-        &--shadow {
-            @include shadow__cards; 
-
-        }
-
-        &--bgviolet:hover {
-            background: $color-background-violet;
-        }
-
-        .fa-solid {
-            color: $color-primaire;
-        }
-}
-
-.fonction__onglets__description {
-    @include fonction__onglets; 
-    padding-left: 30px;  
-
-    @media screen and (min-width: 993px) {
-        justify-content: center;
-    }
-    }
-
-.fonction__onglets__number {
-    position: absolute; 
-    left: -10px; 
-    padding: 4px 9px; 
-    border-radius: 100px;
-
-    @media screen and (min-width: 993px ) {
-        left: 5px; 
-    }
-
-    &--violet {
-        background-color: $color-primaire;
-        color: #fff; 
-    }
-}
-
 
 /*--Section3--*/
 .services {
@@ -158,40 +109,6 @@
     
 }
 
-.services__card {
-    @include services__card--structure;
-    @include shadow__cards;
-    transform: scale(1);
-    transition: transform (0.25s);
-    
-    &:hover {
-        transform: scale(1.05); 
-    }
-
-    a {
-        @include card__link--fix;
-    }
-}
-
-.services__card__img {
-    position: relative;
-    height: 180px; 
-    .bandeau {
-        @include bandeau--struture; 
-
-        &--mint {
-        @include bandeau--graphic; 
-        }
-        
-    } 
-    img {
-        width: 100%; 
-        height: 100%; 
-        object-fit: cover;
-        border-radius: 30px 30px 0 0;  
-        }
-}
-
 h3 {
     margin: 0; 
     font-size: 16px;
@@ -205,16 +122,3 @@ h4 {
     color: $lighten-header; 
 }
 
-.services__card__description {
-    padding: 0 20px 15px; 
-    display: flex; 
-    align-items: baseline; 
-    justify-content: space-between;
-    background: #fff;
-    border-radius: 0 0 30px 30px; 
-
-    &__titles {
-        padding: 20px 0 0; 
-        gap: 20px; 
-    }
-}
