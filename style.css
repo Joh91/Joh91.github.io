@@ -589,6 +589,11 @@ form {
   border-radius: 15px;
   position: relative;
 }
+@media screen and (min-width: 993px) {
+  .fonction__onglets {
+    width: 40%;
+  }
+}
 .fonction__onglets--bggreylight {
   background: rgb(244, 244, 244);
 }
@@ -604,11 +609,11 @@ form {
 
 .fonction__onglets__description {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
   padding: 10px;
   gap: 10px;
-  width: 100%;
   padding-left: 30px;
+  width: 100%;
 }
 @media screen and (min-width: 993px) {
   .fonction__onglets__description {
@@ -624,7 +629,7 @@ form {
 }
 @media screen and (min-width: 993px) {
   .fonction__onglets__number {
-    left: 5px;
+    left: 40px;
   }
 }
 .fonction__onglets__number--violet {
@@ -826,9 +831,17 @@ header .fa-solid--dark {
     align-items: center;
   }
 }
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1299px) {
   .fonction__description {
-    width: 90%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .fonction__description {
     flex-direction: row;
     gap: 60px;
   }

@@ -25,8 +25,9 @@
 }
 
 .fonction__onglets__description {
-    @include fonction__onglets; 
+    @include fonction__onglets__description; 
     padding-left: 30px;  
+    width: 100%; 
 
     @media screen and (min-width: 993px) {
         justify-content: center;
@@ -40,7 +41,7 @@
     border-radius: 100px;
 
     @media screen and (min-width: 993px ) {
-        left: 5px; 
+        left: 40px; 
     }
 
     &--violet {
