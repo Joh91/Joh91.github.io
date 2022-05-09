@@ -32,28 +32,33 @@
 
      &--bggreylight {
          background-color: $color-background-grey;
-     }
+    }
 
      &__maintitle {
          position: relative; 
          display: flex; 
          align-items: center; 
          justify-content: space-between;
-     }
+         padding-bottom: 10px; 
+         gap: 20px; 
 
-     .maintitle__icon {
-         position: absolute; 
-         right: 10px;
+            @media screen and (min-width: 650px) {
+                width: 70%; 
+            }
 
-         @media screen and (min-width: 650px) {
-            right: -80px; 
-         }
-     }
 
-     h1 {
-         font-family: 'Shrikhand', sans-serif;
-         font-size: 26px; 
-     }
+            @media screen and (min-width: 298px) and (max-width: 350px) {
+                width: 100%; 
+            }
+
+            h1 {
+                font-family: 'Shrikhand', sans-serif;
+                font-size: 26px; 
+            }
+        
+    }
 }
+
+     
 
 

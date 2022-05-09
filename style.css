@@ -759,22 +759,20 @@ form {
 
 /*--Layout--*/
 header {
-  padding: 30px 50px 20px;
+  padding: 30px 50px 30px;
 }
 header .header__logo {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 header .header__logo img {
   width: 200px;
 }
-header .header__logo--elements-position {
-  position: relative;
-}
 header .header__logo--elements-position i {
-  position: absolute;
-  left: 30px;
-  top: 5px;
   font-size: 24px;
+  justify-self: start;
 }
 header .fa-solid--dark {
   color: #000000;
@@ -987,17 +985,20 @@ footer a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.menu__section .maintitle__icon {
-  position: absolute;
-  right: 10px;
+  padding-bottom: 10px;
+  gap: 20px;
 }
 @media screen and (min-width: 650px) {
-  .menu__section .maintitle__icon {
-    right: -80px;
+  .menu__section__maintitle {
+    width: 70%;
   }
 }
-.menu__section h1 {
+@media screen and (min-width: 298px) and (max-width: 350px) {
+  .menu__section__maintitle {
+    width: 100%;
+  }
+}
+.menu__section__maintitle h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 26px;
 }
