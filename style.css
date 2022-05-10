@@ -452,7 +452,7 @@ body {
   animation: appearance 1s ease-in-out 1.5s forwards;
 }
 .cards__animation--4 {
-  animation: appearance 1s ease-in-out 2.25s forwards;
+  animation: appearance 1s ease-in-out 2s forwards;
 }
 .cards__animation--1_2 {
   animation: appearance 1s ease-in-out 3s forwards;
@@ -478,7 +478,7 @@ body {
   animation: appearance 1s ease-in-out 0.25s forwards;
 }
 .title__animation--anim2 {
-  animation: appearance 1s ease-in-out 2s forwards;
+  animation: appearance 1s ease-in-out 2.25s forwards;
 }
 .title__animation--anim3 {
   animation: appearance 1s ease-in-out 4.5s forwards;
@@ -721,7 +721,6 @@ form {
   margin-bottom: 30px;
   border-radius: 20px;
   display: flex;
-  justify-content: space-between;
 }
 @media screen and (min-width: 650px) {
   .cards__description {
@@ -772,9 +771,6 @@ header .header__logo img {
 }
 header .header__logo--elements-position i {
   font-size: 24px;
-  justify-self: start;
-}
-header .fa-solid--dark {
   color: #000000;
 }
 
