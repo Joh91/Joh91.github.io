@@ -420,7 +420,7 @@ body {
   transform: rotate(1turn);
 }
 .cards__animation .cards__description__icon {
-  margin-right: -250px;
+  margin-right: -350px;
   display: flex;
   width: 20%;
   background-color: #99E2D0;
@@ -759,18 +759,19 @@ form {
 
 /*--Layout--*/
 header {
-  padding: 30px 50px 30px;
+  padding: 30px 20px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 header .header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  margin: auto;
 }
 header .header__logo img {
   width: 200px;
 }
-header .header__logo--elements-position i {
+header .header__icon i {
   font-size: 24px;
   color: #000000;
 }

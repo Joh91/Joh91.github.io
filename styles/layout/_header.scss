@@ -1,19 +1,22 @@
 header {
-    padding: 30px 50px 30px; 
+    padding: 30px 20px 30px; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    gap: 10px; 
+
 
         .header__logo {
+            margin: auto; 
+            
             & img {
-                width: 200px;  
+                width: 200px; 
             }
 
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            gap: 20px; 
         }
     
-        .header__logo--elements-position {
-            i { 
+        .header__icon {
+            i {
                 font-size: 24px;
                 color: #000000;  
             }
