@@ -20,35 +20,42 @@
 
 /*--cards--*/ 
 .cards__description {
-    @include menu__cards--description;
-
+    @include menu__cards--description; 
+    
     @media screen and (min-width: 650px) {
         width: 70%
     }
 
-
     &__title {
         padding: 15px;
-        width: 80%; 
+        overflow: hidden; 
+        
     }
     
     &__price {
         text-align: right;
-        margin-right: 25px; 
         padding-bottom: 15px;
         font-weight: bold;
         align-self: flex-end;
-        font-size: 14px; 
-        width: 20%;  
+        font-size: 14px;
+        margin-right: 15px;  
+    }
+    
+    h3, h4 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; 
     }
 }
 
 .cards__description a {
     border: inherit; 
     text-decoration: none;
+    justify-content: space-between;
     color: black; 
     display: flex; 
-    width: 100%;
+    flex: 1; 
+    overflow: hidden; 
 }
 
 .cards__design {

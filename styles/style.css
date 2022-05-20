@@ -420,9 +420,9 @@ body {
   transform: rotate(1turn);
 }
 .cards__animation .cards__description__icon {
-  margin-right: -350px;
+  margin-right: -65px;
   display: flex;
-  width: 20%;
+  flex-basis: 65px;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
   justify-content: center;
@@ -730,24 +730,30 @@ form {
 }
 .cards__description__title {
   padding: 15px;
-  width: 80%;
+  overflow: hidden;
 }
 .cards__description__price {
   text-align: right;
-  margin-right: 25px;
   padding-bottom: 15px;
   font-weight: bold;
   align-self: flex-end;
   font-size: 14px;
-  width: 20%;
+  margin-right: 15px;
+}
+.cards__description h3, .cards__description h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .cards__description a {
   border: inherit;
   text-decoration: none;
+  justify-content: space-between;
   color: black;
   display: flex;
-  width: 100%;
+  flex: 1;
+  overflow: hidden;
 }
 
 .cards__design--bgwhite {
